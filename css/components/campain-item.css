@@ -1,0 +1,15 @@
+.campains .campain-item{
+    padding: 70px 35px;
+    background-size: cover;
+    background-position: center;
+    flex:1;
+    color: white;
+}
+
+
+@media (max-width: 768px){
+    .campains .campain-item{
+        width: 100%;
+        flex: unset !important;
+    }
+}

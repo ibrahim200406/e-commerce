@@ -1,0 +1,149 @@
+.section-title {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.section-title h2 {
+  line-height: 0.8;
+  margin-bottom: 4px;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+/* ! categories start */
+.categories {
+  margin: 40px 0;
+}
+.categories .category-list {
+  display: flex;
+  gap: 30px;
+  margin: 30px;
+  flex-wrap: wrap;
+}
+/* ! categories end */
+
+/* ! products start */
+.products {
+  margin-bottom: 40px;
+}
+
+
+/* ! products end */
+
+/* ! Campain start */
+
+.campains .campains-wrapper {
+  display: flex;
+  gap: 30px;
+  margin: 30px 0;
+  flex: wrap;
+}
+
+.campains .campains-wrapper .campaign-title {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.campains .campains-wrapper .campain-dec {
+  margin: 40px 0;
+  font-size: 14px;
+}
+
+.campains-wrapper:nth-child(1) .campain-item:nth-child(1) {
+  background-image: url(../../img/campaigns/banner1.png);
+}
+.campains-wrapper:nth-child(1) .campain-item:nth-child(2) {
+  background-image: url(../../img/campaigns/banner2.png);
+}
+
+.campains-wrapper:nth-child(2) .campain-item:nth-child(1) {
+  background-image: url(../../img/campaigns/banner3.png);
+  flex: 2;
+}
+
+.campains-wrapper:nth-child(2) .campain-item:nth-child(2) {
+  background-image: url(../../img/campaigns/banner1.png);
+}
+/* ! Campain end */
+
+/* ! blog start */
+.blogs {
+  margin-bottom: 30px;
+}
+.blogs .blog-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+/* ! blog end */
+
+/* ! brand start  */
+.brands {
+  margin: 40px 0;
+}
+.brand-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border: 1px solid #dee0ea;
+  padding: 30px 5px;
+}
+
+.brand-list .brand-item {
+  opacity: 0.4;
+  transition: 0.2s ease-in-out all;
+}
+.brand-list .brand-item:hover {
+  opacity: 1;
+}
+/* ! brand end */
+
+/* ! policy start */
+
+.policy {
+  border: 1px solid #dee0ea;
+  margin-top: 40px;
+}
+
+.policy .policy-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 25px 0;
+}
+
+.policy .policy-list .policy-item {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.policy-item i {
+  font-size: 50px;
+  display: flex;
+}
+.policy .policy-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.policy .policy-text strong {
+  font-weight: 600;
+}
+.policy .policy-text span {
+  font-size: 14px;
+}
+
+/* ! policy end */
+
+/* * responsive start */
+@media (max-width: 768px) {
+  .blogs .blog-list {
+    grid-template-columns: 1fr;
+  }
+  .policy .policy-list {
+    flex-direction: column;
+  }
+}
